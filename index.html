@@ -1,9 +1,128 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>My page on github</title>
-</head>
-<body>
-<p> this is the first line</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="/favicon.ico" rel="icon">
+    <title>联谱</title>
+    <script src="practice.js"></script>
+    <style media="screen">
+      #intro {
+        margin-top:10px;
+        margin-bottom:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center">谱源<i class="fa fa-book"></i></h2>
+      <!--<span class="glyphicon glyphicon-book"></span> <span class="glyphicon glyphicon-book"></span>-->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="index.html"><i class="material-icons" style="font-size:18px">person_add</i> 输入信息</a></li>
+        <li><a href="Search.html"><span class="glyphicon glyphicon-search"></span> 查询信息</a></li>
+        <li><a href="About.html"><span class="glyphicon glyphicon-info-sign"></span> 网站简介</a></li>
+        <li><a href="page1.html">page1</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p id="intro">
+        请输入某一位乡亲的信息
+      </p>
+    </div>
+
+    <div class="container">
+
+      <form class="" action="index.html" method="post">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="SuoShuDi"><span class="glyphicon glyphicon-map-marker"></span> 所属村（地）：</label>
+              <input  type="text" list="location" class="form-control" id="SuoShuDi" required="">
+              <datalist id="location">
+                <option value="槐树村">
+                <option value="北山村">
+                <option value="燕窠村">
+                <option value="寺前村"></option>
+                <option value="老屋下"></option>
+                <option value="土桥头">
+              </datalist>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="XingBie">性别：</label>
+              <select class="form-control" id="XingBie">
+                <option>男</option>
+                <option>女</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="PuMing"><i class="fa fa-address-card-o" style="font-size:18px"></i> 谱名：</label>
+              <input type="text" class="form-control" id="PuMing">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="XiaoMing">字（或者小名）：</label>
+              <input type="text" class="form-control" id="XiaoMing">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="BirthDay"><i class="fa fa-birthday-cake" style="font-size:18px"></i> 出生日期：</label>
+              <input type="text" class="form-control" id="BirthDay" required="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="PassDay"><i class="fa fa-calendar" style="font-size:18px"></i> 过世日期：</label>
+              <input type="text" class="form-control" id="PassDay" placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="BaBa"><i class="material-icons" style="font-size:18px">people</i> 父亲的谱名：</label>
+              <input type="text" class="form-control" id="BaBa" required="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="MaMa"><i class="material-icons" style="font-size:18px">people</i> 母亲的名字：</label>
+              <input type="text" class="form-control" id="MaMa" required="">
+            </div>
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="BeiZhu"><i class="fa fa-commenting-o" style="font-size:18px"></i> 备注：</label>
+            <textarea class="form-control" rows="3" id="BeiZhu" placeholder="例如过继、婚娶、子嗣等信息"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success btn-block"> 提交 <span class="glyphicon glyphicon-send"></span></button>
+      </form>
+    </div>
+
+    <div class="container">
+      <footer>
+        <p class="text-center"style="margin-top:24px;margin-bottom:24px">
+          &#169 2016Yanfeng Wu, 联系邮箱
+          <i class="fa fa-envelope"></i>
+          : yanfeng1223@126.com</p>
+      </footer>
+    </div>
+  </body>
 </html>
