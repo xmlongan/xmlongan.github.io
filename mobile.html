@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mobile</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="icon" type="image/png" href="me24.png">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      .nav-glyphish-example .ui-btn { padding-top: 40px !important;}
+      .nav-glyphish-example #myicon {font-weight: normal;}
+      .nav-glyphish-example .ui-btn:after { width: 30px!important;height: 30px!important;margin-left: -15px !important; box-shadow:
+      none!important; -moz-box-shadow: none!important;-webkit-box-shadow: none!important;-webkit-border-radius: 0!important;border-radius:
+      0 !important; }
+      #myicon:after { background: url("me24.png") 50% 50% no-repeat; background-size: 24px 24px;}
+    </style>
+  </head>
+  <body>
+    <div data-role="page" id="pageone">
+      <div data-role="header">
+        <h1>谱往 谱连</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <form method="post" action="demoform.asp">
+          <div class="ui-field-contain">
+            <label for="fullname">Full name:</label>
+            <input type="text" name="fullname" id="fullname">
+            <label for="bday">Date of Birth:</label>
+            <input type="date" name="bday" id="bday">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Your email..">
+          </div>
+          <input type="submit" data-inline="true" value="Submit">
+        </form>
+
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#pageone" data-icon="search" class="ui-btn-active ui-state-persist" >查询</a></li>
+            <li><a href="#pagetwo" data-icon="plus" >添加</a></li>
+            <li><a href="#pagethree" data-icon="user">个人</a></li>
+            <li><a href="#pagefour" data-icon="heart">pagefour</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="pagetwo">
+      <div data-role="main" class="ui-content">
+        <div class="">
+          <h5 style="text-align:center;font-size:110%;">千秋岁　张先</h5>
+              <p>
+                数声鶗鳺，又报芳菲歇。惜春更选残红折，雨轻风色暴，梅子青时节。
+                永丰柳，无人尽日花飞雪。</p>
+              <p>
+                莫把幺弦拨，怨极弦能说。天不老，情难绝，心似双丝网，中有千千结。
+                夜过也，东窗未白孤灯灭。
+              </p>        　　　　　　　　　　　　　　　　　　　
+        </div>
+
+        <div class="">
+          <h5 style="text-align:center;font-size:110%;">菩萨蛮　张先 </h5>
+            <p>
+              哀筝一弄湘江曲，声声写尽湘波绿。纤指十三弦，细将幽恨传。当筵秋水慢，
+              玉柱斜飞雁。弹到断肠时，春山眉黛低。</p>
+            <p>
+              醉垂鞭，张先双蝶绣罗裙，东池宴初相见。朱粉不深匀，闲花淡淡春。
+              细看诸处好，人人道柳腰身。昨日乱山昏，来时衣上云。
+            </p>
+        </div>　　　　　　　　　　　　　　　　　　
+
+        <div class="">
+          <h5 style="text-align:center;font-size:110%;">一丛花 张先</h5>
+          <p>
+            伤高怀远几时穷？无物似情浓。离愁正引千丝乱，更东陌，飞絮蒙蒙。
+            嘶骑渐遥，征尘不断，何处认郎踪？
+          </p>
+          <p>
+            双鸳池沼水溶溶，南北小桡通。梯横画阁黄昏后，又还是，斜月帘栊。
+            沉恨细思，不如桃杏，犹解嫁东风。
+          </p>
+        </div>
+          　　　　　　　　　　　　　　　　
+      </div>
+
+      <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#pageone" data-icon="search"  >查询</a></li>
+            <li><a href="#pagetwo" data-icon="plus" class="ui-btn-active ui-state-persist" >添加</a></li>
+            <li><a href="#pagethree" data-icon="user">个人</a></li>
+            <li><a href="#pagefour" data-icon="heart">pagefour</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="pagethree">
+      <div data-role="header">
+        <h1>page three</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>content</p>
+      </div>
+
+      <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#pageone" data-icon="search"  >查询</a></li>
+            <li><a href="#pagetwo" data-icon="plus" >添加</a></li>
+            <li><a href="#pagethree" data-icon="user" class="ui-btn-active ui-state-persist" >个人</a></li>
+            <li><a href="#pagefour" data-icon="heart">pagefour</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="pagefour">
+      <div data-role="header">
+        <h1>page four</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>content</p>
+        <h1>title</h1>
+      </div>
+
+      <div data-role="footer" class="nav-glyphish-example" data-position="fixed">
+        <div data-role="navbar" class="nav-glyphish-example">
+          <ul>
+            <li><a href="#pageone" data-icon="search"  >查询</a></li>
+            <li><a href="#pagetwo" data-icon="plus" >添加</a></li>
+            <li><a href="#pagethree" data-icon="user" >个人</a></li>
+            <li><a href="#pagefour" id="myicon" data-icon="custom" class="ui-btn-active ui-state-persist" >pagefour</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
