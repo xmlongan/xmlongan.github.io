@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>page 2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+      <div data-role="page" id="pagetwo">
+        <div data-role="header">
+          <h1>I'm A Dialog Box!</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <form method="post" action="demoform.asp">
+              <div class="ui-field-contain">
+                <label for="fullname">Full name:</label>
+                <input type="text" name="fullname" id="fullname">
+                <label for="bday">Date of Birth:</label>
+                <input type="date" name="bday" id="bday">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Your email..">
+              </div>
+              <input type="submit" data-inline="true" value="Submit">
+            </form>
+        </div>
+
+        <div data-role="footer" style="text-align:center;" data-position="fixed" data-fullscreen="true">
+          <div data-role="navbar">
+          <ul>
+            <li><a href="page1.html" class="ui-btn ui-icon-search ui-btn-icon-top" >查询</a></li>
+            <li><a href="page2.html" class="ui-btn ui-icon-plus ui-btn-icon-top" >添加</a></li>
+            <li><a href="#pagethree" class="ui-btn ui-icon-user ui-btn-icon-top" >个人</a></li>
+            <li><a href="#" class="ui-btn ui-icon-heart ui-btn-icon-top" >个人</a></li>
+          </ul>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
